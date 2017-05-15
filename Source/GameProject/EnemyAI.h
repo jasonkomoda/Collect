@@ -5,6 +5,7 @@
 #include "AIController.h"
 #include "EnemyAI.generated.h"
 
+
 /**
  * 
  */
@@ -24,6 +25,5 @@ public:
     AEnemyAI();
     
     virtual void Possess(APawn *InPawn) override;
-    void TickNode(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory, float DeltaSeconds);
     uint8 EnemyKeyID;
 };

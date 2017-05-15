@@ -14,7 +14,7 @@ public:
 	// Sets default values for this character's properties
 	AEnemyCharacter();
     
-    UPROPERTY(EditAnywhere, Category=Behavior)
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Behavior")
     class UBehaviorTree *BotBehavior;
 
 protected:
@@ -28,6 +28,5 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
-	
-	
+    FVector SpawnPoint;
 };
